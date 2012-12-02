@@ -12,7 +12,7 @@ require([
 	var BULLET_POS_VERT_MAX;
 	var BULLET_POS_VERT_MIN;
 	var BULLET_SPEED_MIN = 1;
-	var BULLET_SPEED_MAX = 4;
+	var BULLET_SPEED_MAX = 2;
 	
 
 	var game;
