@@ -24,7 +24,7 @@ require([
 	var resourceManager = new ResourceManager();
 	var castleImage = resourceManager.loadImage('resources/images/castle.png');
 	var bulletImage = resourceManager.loadImage('resources/images/bullet.png');
-
+	var bulletsound = resourceManager.loadSound('resources/sounds/bulletshoot.wav');
 	function randomInt(lower, upper){
 		return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 	}
@@ -67,6 +67,7 @@ require([
 			})
 			if(Math.random() < 0.03){
 				bullets.push(newBullet());
+				resourceManager.playSound(bulletsound);
 			}
 		}
 
